@@ -3,6 +3,8 @@ AM_INIT_AUTOMAKE([-Wall])
 
 AC_PROG_CC
 
+AC_CHECK_LIB([X11], [XOpenDisplay])
+
 AC_CONFIG_FILES([
     Makefile
     xfbcat/Makefile
